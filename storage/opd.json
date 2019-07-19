@@ -1,0 +1,338 @@
+[
+    {
+        "id_opd": 3,
+        "nama_opd": "Dinas Perhubungan"
+    },
+    {
+        "id_opd": 4,
+        "nama_opd": "Dinas Komunikasi dan Informatika"
+    },
+    {
+        "id_opd": 6,
+        "nama_opd": "Rumah Sakit Umum Daerah"
+    },
+    {
+        "id_opd": 8,
+        "nama_opd": "Sekretariat Daerah Kota"
+    },
+    {
+        "id_opd": 10,
+        "nama_opd": "Badan Kepegawaian dan Pengembangan Sumber Daya Manusia"
+    },
+    {
+        "id_opd": 11,
+        "nama_opd": "Badan Penanggulangan Bencana Daerah, Kesatuan Bangsa dan Politik"
+    },
+    {
+        "id_opd": 12,
+        "nama_opd": "Badan Pengelola Keuangan Daerah"
+    },
+    {
+        "id_opd": 13,
+        "nama_opd": "Badan Perencanaan, Penelitian dan Pengembangan Daerah"
+    },
+    {
+        "id_opd": 14,
+        "nama_opd": "Dinas Kependudukan dan Pencatatan Sipil"
+    },
+    {
+        "id_opd": 15,
+        "nama_opd": "Dinas Kesehatan"
+    },
+    {
+        "id_opd": 16,
+        "nama_opd": "Dinas Pangan dan Pertanian"
+    },
+    {
+        "id_opd": 17,
+        "nama_opd": "Dinas Pariwisata"
+    },
+    {
+        "id_opd": 18,
+        "nama_opd": "Dinas Pekerjaan Umum dan Penataan Ruang"
+    },
+    {
+        "id_opd": 19,
+        "nama_opd": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu"
+    },
+    {
+        "id_opd": 20,
+        "nama_opd": "Dinas Pendidikan, Pemuda dan Olahraga"
+    },
+    {
+        "id_opd": 21,
+        "nama_opd": "Dinas Perdagangan, Koperasi, Usaha Kecil dan Menengah"
+    },
+    {
+        "id_opd": 22,
+        "nama_opd": "Dinas Perpustakaan dan Arsip"
+    },
+    {
+        "id_opd": 23,
+        "nama_opd": "Dinas Perumahan, Kawasan Pemukiman dan Lingkungan Hidup"
+    },
+    {
+        "id_opd": 24,
+        "nama_opd": "Dinas Sosial, Pengendalian Penduduk, Keluarga Berencana, Pemberdayaan Perempuan dan Perlindungan Anak"
+    },
+    {
+        "id_opd": 28,
+        "nama_opd": "Inspektorat"
+    },
+    {
+        "id_opd": 29,
+        "nama_opd": "Kecamatan Padang Panjang Barat"
+    },
+    {
+        "id_opd": 30,
+        "nama_opd": "Kecamatan Padang Panjang Timur"
+    },
+    {
+        "id_opd": 31,
+        "nama_opd": "Kelurahan Balai-Balai"
+    },
+    {
+        "id_opd": 32,
+        "nama_opd": "Kelurahan Bukit Surungan"
+    },
+    {
+        "id_opd": 33,
+        "nama_opd": "Kelurahan Ekor Lubuk"
+    },
+    {
+        "id_opd": 34,
+        "nama_opd": "Kelurahan Ganting"
+    },
+    {
+        "id_opd": 35,
+        "nama_opd": "Kelurahan Guguk Malintang"
+    },
+    {
+        "id_opd": 36,
+        "nama_opd": "Kelurahan Kampung Manggis"
+    },
+    {
+        "id_opd": 37,
+        "nama_opd": "Kelurahan Koto Katik"
+    },
+    {
+        "id_opd": 38,
+        "nama_opd": "Kelurahan Koto Panjang"
+    },
+    {
+        "id_opd": 39,
+        "nama_opd": "Kelurahan Ngalau"
+    },
+    {
+        "id_opd": 40,
+        "nama_opd": "Kelurahan Pasar Baru"
+    },
+    {
+        "id_opd": 41,
+        "nama_opd": "Kelurahan Pasar Usang"
+    },
+    {
+        "id_opd": 42,
+        "nama_opd": "Kelurahan Sigando"
+    },
+    {
+        "id_opd": 43,
+        "nama_opd": "Kelurahan Silaing Atas"
+    },
+    {
+        "id_opd": 44,
+        "nama_opd": "Kelurahan Silaing Bawah"
+    },
+    {
+        "id_opd": 45,
+        "nama_opd": "Kelurahan Tanah Hitam"
+    },
+    {
+        "id_opd": 46,
+        "nama_opd": "Kelurahan Tanah Pak Lambiak"
+    },
+    {
+        "id_opd": 48,
+        "nama_opd": "SDN 01 Guguk Malintang"
+    },
+    {
+        "id_opd": 49,
+        "nama_opd": "SDN 01 Pasar Usang"
+    },
+    {
+        "id_opd": 50,
+        "nama_opd": "SDN 02 Kampung Manggis"
+    },
+    {
+        "id_opd": 51,
+        "nama_opd": "SDN 02 Tanah Pak Lambiak"
+    },
+    {
+        "id_opd": 52,
+        "nama_opd": "SDN 03 Balai-Balai"
+    },
+    {
+        "id_opd": 53,
+        "nama_opd": "SDN 03 Guguk Malintang"
+    },
+    {
+        "id_opd": 54,
+        "nama_opd": "SDN 04 Guguk Malintang"
+    },
+    {
+        "id_opd": 55,
+        "nama_opd": "SDN 05 Pasar Usang"
+    },
+    {
+        "id_opd": 56,
+        "nama_opd": "SDN 06 Balai-Balai"
+    },
+    {
+        "id_opd": 57,
+        "nama_opd": "SDN 06 Sigando"
+    },
+    {
+        "id_opd": 58,
+        "nama_opd": "SDN 07 Ekor Lubuk"
+    },
+    {
+        "id_opd": 59,
+        "nama_opd": "SDN 07 Silaing Bawah"
+    },
+    {
+        "id_opd": 60,
+        "nama_opd": "SDN 08 Ganting"
+    },
+    {
+        "id_opd": 61,
+        "nama_opd": "SDN 08 Kampung Manggis"
+    },
+    {
+        "id_opd": 62,
+        "nama_opd": "SDN 09 Balai-Balai"
+    },
+    {
+        "id_opd": 63,
+        "nama_opd": "SDN 09 Guguk Malintang"
+    },
+    {
+        "id_opd": 64,
+        "nama_opd": "SDN 11 Ekor Lubuk"
+    },
+    {
+        "id_opd": 65,
+        "nama_opd": "SDN 12 Silaing Bawah"
+    },
+    {
+        "id_opd": 66,
+        "nama_opd": "SDN 13 Balai-Balai"
+    },
+    {
+        "id_opd": 67,
+        "nama_opd": "SDN 13 Ganting"
+    },
+    {
+        "id_opd": 68,
+        "nama_opd": "SDN 14 Bukit Surungan"
+    },
+    {
+        "id_opd": 69,
+        "nama_opd": "SDN 14 Koto Panjang"
+    },
+    {
+        "id_opd": 70,
+        "nama_opd": "SDN 15 Ngalau"
+    },
+    {
+        "id_opd": 71,
+        "nama_opd": "SDN 15 Tanah Hitam"
+    },
+    {
+        "id_opd": 72,
+        "nama_opd": "SDN 16 Kampung Manggis"
+    },
+    {
+        "id_opd": 73,
+        "nama_opd": "SDN 16 Koto Katik"
+    },
+    {
+        "id_opd": 74,
+        "nama_opd": "SDN 17 Kampung Manggis"
+    },
+    {
+        "id_opd": 75,
+        "nama_opd": "SDN 17 Sigando"
+    },
+    {
+        "id_opd": 76,
+        "nama_opd": "SDN 18 Koto Panjang"
+    },
+    {
+        "id_opd": 77,
+        "nama_opd": "SDN 18 Silaing Bawah"
+    },
+    {
+        "id_opd": 78,
+        "nama_opd": "SDN 19 Kampung Manggis"
+    },
+    {
+        "id_opd": 79,
+        "nama_opd": "SLTP I"
+    },
+    {
+        "id_opd": 80,
+        "nama_opd": "SLTP II"
+    },
+    {
+        "id_opd": 81,
+        "nama_opd": "SLTP III"
+    },
+    {
+        "id_opd": 82,
+        "nama_opd": "SLTP IV"
+    },
+    {
+        "id_opd": 83,
+        "nama_opd": "SLTP V"
+    },
+    {
+        "id_opd": 84,
+        "nama_opd": "SLTP VI"
+    },
+    {
+        "id_opd": 85,
+        "nama_opd": "Satuan Polisi Pamong Praja Pemadam Kebakaran"
+    },
+    {
+        "id_opd": 86,
+        "nama_opd": "Sekretariat DPRD"
+    },
+    {
+        "id_opd": 94,
+        "nama_opd": "UPTD Puskesmas Bukit Surungan"
+    },
+    {
+        "id_opd": 95,
+        "nama_opd": "UPTD Puskesmas Gunung"
+    },
+    {
+        "id_opd": 96,
+        "nama_opd": "UPTD Puskesmas Kebun Sikolos"
+    },
+    {
+        "id_opd": 97,
+        "nama_opd": "UPTD Puskesmas Koto Katik"
+    },
+    {
+        "id_opd": 101,
+        "nama_opd": "SDN 04 Kampung Manggis"
+    },
+    {
+        "id_opd": 102,
+        "nama_opd": "Badan Kepegawaian Negara"
+    },
+    {
+        "id_opd": 103,
+        "nama_opd": "Kementerian Pendayagunaan Aparatur Negara dan Reformasi Birokrasi"
+    }
+]
