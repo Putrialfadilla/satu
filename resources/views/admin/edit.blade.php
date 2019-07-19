@@ -58,7 +58,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlFile1">Foto</label>
-                        <img src="{{url('image')}}/{{ $admin->foto}}" style="max-height:200px;max-width:200px;margin-top:10px;"><input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1">
+                        <img src="{{url('image')}}/{{ $admin->foto}}" id="output" style="max-height:200px;max-width:200px;margin-top:10px;"><input type="file" name="foto" onchange="loadFile(event)" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                             <button type="submit" class="btn btn-warning">Update</button>                   
                 </form>
@@ -67,5 +67,23 @@
         </section>
         <!-- /.content -->
     </div>
+{{--  --}}
+<style>
+    .gambar {
+        width: 200px;
+        height: 200px;
+    }
 
+</style>
+<script>
+    var loadFile = function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('output');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+
+</script>
 @include('admin.footeradmin')

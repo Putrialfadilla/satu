@@ -51,7 +51,23 @@ class AdminController extends Controller
             $resorce       = $request->file('foto');
             $name   = $resorce->getClientOriginalName();
             $resorce->move(\base_path() ."/public/image", $name);
-            $save = DB::table('admin')->insert([
+            $save = DB::table('admin')
+            ->where('id',$id)
+            ->update([
+                'nama' => $request->nama,
+                'tempat' => $request->tempat,
+                'tanggal_lahir' => $request->tanggal_lahir,
+                'jenis_klamin' => $request->jenis_klamin,
+                'alamat' => $request->alamat,
+                'jabatan' => $request->jabatan,
+                   'opd' => $request->opd,
+                'hp' => $request->hp,
+                'foto' => $name]);
+            }
+        else {
+            $save = DB::table('admin')
+            ->where('id',$id)
+            ->update([
                 'nama' => $request->nama,
                 'tempat' => $request->tempat,
                 'tanggal_lahir' => $request->tanggal_lahir,
@@ -61,7 +77,8 @@ class AdminController extends Controller
                 'opd' => $request->opd,
                 'hp' => $request->hp,
                 'foto' => $name]);
+        }
         return redirect('/admin');
             }
     }
-}
+
