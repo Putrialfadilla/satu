@@ -1,16 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use DB;
+use File;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function create(Request $request){
-        if($request->hasFile('foto')){
-            $resorce       = $request->file('foto');
-            $name   = $resorce->getClientOriginalName();
-            $resorce->move(\base_path() ."/public/image", $name);
+    public function create(Request $request)
+    {
+        if ($request->hasFile('foto')) {
+            $resorce = $request->file('foto');
+            $name = $resorce->getClientOriginalName();
+            $resorce->move(\base_path() . "/public/image", $name);
             $save = DB::table('admin')->insert([
                 'nama' => $request->nama,
                 'tempat' => $request->tempat,
@@ -21,13 +24,13 @@ class AdminController extends Controller
                 'opd' => $request->opd,
                 'hp' => $request->hp,
                 'foto' => $name]);
-                return redirect('/admin');
+            return redirect('/admin');
+        }
     }
-}
     public function admin()
     {
-        $data_admin =\App\admin::all();
-        return view('admin/admin',['admin' => $data_admin]);
+        $data_admin = \App\admin::all();
+        return view('admin/admin', ['admin' => $data_admin]);
     }
 
     public function delete($id)
@@ -40,45 +43,45 @@ class AdminController extends Controller
     public function edit($id)
     {
         $admin = \App\admin::find($id);
-        return view('admin/edit',['admin' => $admin]);
+        return view('admin/edit', ['admin' => $admin]);
     }
-
-    public function update(Request $request,$id)
+   
+    public function update(Request $request, $id)
     {
         $admin = \App\admin::find($id);
-        $admin->update($request->all());
-        if($request->hasFile('foto')){
-            $resorce       = $request->file('foto');
-            $name   = $resorce->getClientOriginalName();
-            $resorce->move(\base_path() ."/public/image", $name);
+        //$admin->update($request->all());
+        $gambar = \App\admin::where('id', $id)->first(); 
+        if ($request->hasFile('foto')) {  
+            unlink(public_path() .  '/image/' . $gambar->foto);
+            $resorce = $request->file('foto');
+            $name = $resorce->getClientOriginalName();
+            $resorce->move(\base_path() . "/public/image", $name);
             $save = DB::table('admin')
-            ->where('id',$id)
-            ->update([
-                'nama' => $request->nama,
-                'tempat' => $request->tempat,
-                'tanggal_lahir' => $request->tanggal_lahir,
-                'jenis_klamin' => $request->jenis_klamin,
-                'alamat' => $request->alamat,
-                'jabatan' => $request->jabatan,
-                   'opd' => $request->opd,
-                'hp' => $request->hp,
-                'foto' => $name]);
-            }
-        else {
+                ->where('id', $id)
+                ->update([
+                    'nama' => $request->nama,
+                    'tempat' => $request->tempat,
+                    'tanggal_lahir' => $request->tanggal_lahir,
+                    'jenis_klamin' => $request->jenis_klamin,
+                    'alamat' => $request->alamat,
+                    'jabatan' => $request->jabatan,
+                    'opd' => $request->opd,
+                    'hp' => $request->hp,
+                    'foto' => $name]);
+        } else {
             $save = DB::table('admin')
-            ->where('id',$id)
-            ->update([
-                'nama' => $request->nama,
-                'tempat' => $request->tempat,
-                'tanggal_lahir' => $request->tanggal_lahir,
-                'jenis_klamin' => $request->jenis_klamin,
-                'alamat' => $request->alamat,
-                'jabatan' => $request->jabatan,
-                'opd' => $request->opd,
-                'hp' => $request->hp,
-                'foto' => $name]);
+                ->where('id', $id)
+                ->update([
+                    'nama' => $request->nama,
+                    'tempat' => $request->tempat,
+                    'tanggal_lahir' => $request->tanggal_lahir,
+                    'jenis_klamin' => $request->jenis_klamin,
+                    'alamat' => $request->alamat,
+                    'jabatan' => $request->jabatan,
+                    'opd' => $request->opd,
+                    'hp' => $request->hp,
+                    'foto' => $gambar->foto]);
         }
         return redirect('/admin');
-            }
     }
-
+}

@@ -19,3 +19,4 @@ Route::get('/admin','AdminController@admin');
 Route::get('/admin/{id}/edit','AdminController@edit');
 Route::post('/admin/{id}/update','AdminController@update');
 Route::get('/admin/{id}/delete','AdminController@delete');
+Route::get('/admin/{id}/hapus','AdminController@hapus');
